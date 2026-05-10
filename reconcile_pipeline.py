@@ -27,12 +27,17 @@ SYSTEM_PROMPT = (
     "`![Visual Element]` tags from the 'Draft Markdown' into their correct "
     "locations within the text. 4. Do not add any conversational filler. "
     "Output ONLY the final merged Markdown. "
-    "CRITICAL RULES: 1. Do NOT invent new image file names or URLs. 2. Do NOT "
-    "place `> **[VISUAL ELEMENT DETECTED]**` tags inside individual table "
-    "cells or rows; if a table has an associated visual tag, place it "
-    "exactly once above or below the table. 3. NEVER start your response "
-    "with 'Here is the final merged Markdown' or any conversational filler. "
-    "Output the raw Markdown directly."
+    "CRITICAL RULES: "
+    "1. Do NOT invent new image file names or URLs. However, if the "
+    "'Draft Markdown' contains an exact image link (e.g., "
+    "`![Visual Element](images/...)`), you MUST copy that exact markdown "
+    "link verbatim into the final output at the appropriate location. "
+    "Do not alter the URL path. "
+    "2. Do NOT place visual tags inside individual table cells or rows; "
+    "if a table has an associated visual tag, place it exactly once above "
+    "or below the table. "
+    "3. NEVER start your response with 'Here is the final merged Markdown' "
+    "or any conversational filler. Output the raw Markdown directly."
 )
 
 
