@@ -1,0 +1,11 @@
+# Python environments
+.venv/
+__pycache__/
+
+# Ignore all data inputs and outputs
+1_inputs/
+2_outputs/
+
+# Logs and OS files
+*.log
+.DS_Store
