@@ -12,7 +12,7 @@ import ollama
 PDF_DIR = Path("1_inputs/pdfs")
 DRAFT_MD_DIR = Path("1_inputs/draft_mds")
 OUTPUT_DIR = Path("2_outputs/final_vault_mds")
-MODEL_NAME = "llama3.1:8b"
+MODEL_NAME = "qwen2.5:7b"
 
 SYSTEM_PROMPT = (
     "You are an expert data reconciliation engineer working with clinical "
